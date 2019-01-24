@@ -1,0 +1,4 @@
+DROP DATABASE IF EXISTS RFCS_schedule;
+CREATE DATABASE RFCS_schedule;
+
+USE RFCS_schedule;
