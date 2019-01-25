@@ -1,27 +1,36 @@
 {
-  "name": "rfcs_schedules",
+  "name": "node-handlebars-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project 2 Starter",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint **/*.js --quiet",
+    "fix": "eslint --fix .",
+    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alanwagner101/RFCS_schedules.git"
-  },
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alanwagner101/RFCS_schedules/issues"
-  },
-  "homepage": "https://github.com/alanwagner101/RFCS_schedules#readme",
   "dependencies": {
+    "animate.css": "^3.7.0",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
     "mysql2": "^1.6.4",
+    "passport": "^0.4.0",
+    "passport-auth0": "^1.1.0",
+    "passport-identityserver3": "^0.6.2",
     "path": "^0.12.7",
-    "sequelize": "^4.42.0"
+    "pug": "^2.0.3",
+    "sequelize": "^4.41.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "mocha": "^5.2.0",
+    "prettier": "^1.13.7"
   }
 }

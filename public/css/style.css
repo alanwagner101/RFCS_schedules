@@ -1,0 +1,28 @@
+#calendar {
+    width: 100%;
+    text-align: center;
+}
+
+#jumbo {
+    text-align: center;
+}
+
+#card1 {
+    height: 680px;
+}
+
+#headerDays {
+
+}
+
+.days {
+    padding: 10px;
+    height: 127px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid red;
+}
+
+th {
+    border: 4px solid grey;
+}
