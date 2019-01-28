@@ -2,8 +2,27 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card" id="jumbo">
-                <div class="card-header">
-                    <h1>January</h1>
+                <div class="container  card-header">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button id="addUserModal" type="submit" class="btn btn-sm btn-default" data-toggle="modal"
+                                data-target="#exampleModal">Add Employee</button>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <div id="titleMonth">
+
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-default changeMonth" value="back">&lt;</button>
+                                    <button class="btn btn-sm btn-default changeMonth" value="forward">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,7 +64,7 @@
                         <td class="days" id="Tue3">17.</td>
                         <td class="days" id="Wed3">18.</td>
                         <td class="days" id="Thu3">19.</td>
-                        <td class="days" id="Fri">20.</td>
+                        <td class="days" id="Fri3">20.</td>
                         <td class="days" id="Sat3">21.</td>
                     </tr>
                     <tr>
@@ -66,7 +85,49 @@
                         <td class="days" id="Fri5">34.</td>
                         <td class="days" id="Sat5">35.</td>
                     </tr>
+                    <tr>
+                        <td class="days" id="Sun6">36.</td>
+                        <td class="days" id="Mon6">37.</td>
+                        <td class="days" id="Tue6">38.</td>
+                        <td class="days" id="Wed6">39.</td>
+                        <td class="days" id="Thu6">40.</td>
+                        <td class="days" id="Fri6">41.</td>
+                        <td class="days" id="Sat6">42.</td>
+                    </tr>
                 </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Add an Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <form id="form">
+                    <h6>Enter Employee's Full Name</h6>
+                    <input id="addFullName" rows="2" cols="30" placeholder="Enter First and Last Name....."></input>
+                    <br><br>
+                    <h6>Enter Email Address</h6>
+                    <input id="addEmail" rows="2" cols="30" placeholder="Enter Email....."></input>
+                    <br><br>
+                    <h6>Select Positions</h6>
+                        <input type="checkbox" name="addPositions" value="1">Bartender</input>
+                        <input type="checkbox" name="addPositions" value="2">Barback</input>
+                        <input type="checkbox" name="addPositions" value="3">Server</input>
+                        <input type="checkbox" name="addPositions" value="4">Prep</input>
+                        <input type="checkbox" name="addPositions" value="5">MOD</input>
+                    <button class="btn btn-sm btn-default" id="submitUser">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
