@@ -9,15 +9,22 @@ var UserAPI = {
       data: JSON.stringify(userData)
     });
   },
-  getUsers: function(userData) {
+  getUsers: function() {
     return $.ajax({
       type: "GET",
-      url: "api/user",
-      data: JSON.stringify(userData)
+      url: "api/user"
+    });
+  },
+  deleteUser: function(id) {
+    return $.ajax({
+      url: "api/user/" + id,
+      type: "DELETE"
     });
   }
 
 };
+
+UserAPI.getUsers();
 
 function findToday() {
   var monthly = ["0 Slot", "31Jan", "28Feb", "31Mar", "30Apr", "31May", "30June", "31July", "31Aug", "30Sep", "31Oct", "30Nov", "31Dec"];
