@@ -1,7 +1,82 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <a href="/calendar" id="shortcut"><button>Calendar</button></a>
+        <div class="onset-md-3 col-md-6 offset-md-3">
+            <div class="card" id="loginCard">
+                <div class="card-header">
+                    <h4>Welcome to myScheduler</h4>
+                </div>
+                <div class="card-body">
+                    <button id="addUserModal" type="submit" class="btn btn-sm btn-default" data-toggle="modal"
+                        data-target="#Modal4">Sign In</button>
+                    <br><br>
+                    <button id="addUserModal" type="submit" class="btn btn-sm btn-default" data-toggle="modal"
+                        data-target="#Modal3">Sign Up</button>
+                    <br><br>
+                    <a href="calendar"><button id="calendarbutton"> Calendar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <form id="form">
+                    <h6>Enter Your Full Name</h6>
+                    <input id="supFullName" rows="2" cols="50" placeholder="Enter First and Last Name....."></input>
+                    <br><br>
+                    <h6>Enter Company Name</h6>
+                    <input id="supCompany" rows="2" cols="50" placeholder="Enter First and Last Name....."></input>
+                    <br><br>
+                    <h6>Enter Pin Number</h6>
+                    <input id="supPin" rows="2" cols="50" placeholder="Enter Pin....."></input>
+                    <br><br>
+                    <h6>Enter Email Address</h6>
+                    <input id="supEmail" rows="2" cols="50" placeholder="Enter Email....."></input>
+                    <br><br>
+                    <button class="btn btn-sm btn-default" id="submitSup">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <form id="form">
+                    <h6>Enter Email</h6>
+                    <input id="loginEmail" rows="2" cols="50" placeholder="Enter Email....."></input>
+                    <br><br>
+                    <h6>Enter Pin Number</h6>
+                    <input id="loginPin" rows="2" cols="50" placeholder="Enter Pin....."></input>
+                    <br><br>
+                    <button class="btn btn-sm btn-default" id="loginSubmit">Enter</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>

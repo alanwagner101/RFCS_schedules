@@ -11,6 +11,16 @@ module.exports = function (sequelize, DataTypes) {
         }
       }
     },
+    company: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: {
+          args: [1, 30],
+          msg: "Company must be between 1 and 30 characters long."
+        }
+      }
+    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -32,6 +42,16 @@ module.exports = function (sequelize, DataTypes) {
         }
       }
     },
+    pin: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        len: {
+          arg: [4, 4],
+          msg: "Pin must be exactly 4 digis long."
+        }
+      }
+    }
   });
 
   User.associate = function (models) {

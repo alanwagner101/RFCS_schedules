@@ -21,6 +21,16 @@ module.exports = function(sequelize, DataTypes) {
           msg: "Time must be between 1 and 50 characters long."
         }
       }
+    },
+    company: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: {
+          args: [1, 30],
+          msg: "Company must be between 1 and 30 characters long."
+        }
+      }
     }
   });
 

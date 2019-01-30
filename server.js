@@ -17,9 +17,10 @@ app.set("view engine", "handlebars");
 
 // Routes
 require("./routes/availability-apiRoutes")(app);
-require("./routes/html-apiRoutes")(app);
 require("./routes/schedule-apiRoutes")(app);
 require("./routes/user-apiRoutes")(app);
+require("./routes/positions-apiRoutes")(app);
+require("./routes/html-apiRoutes")(app);
 
 var syncOptions = { force: false };
 

@@ -26,3 +26,12 @@
 th {
     border: 4px solid grey;
 }
+
+#loginCard {
+    text-align: center;
+    margin-top: 200px
+}
+
+.btn {
+    margin: 10px;
+}
